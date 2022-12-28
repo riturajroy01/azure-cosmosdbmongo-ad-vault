@@ -1,13 +1,13 @@
 spring:
   data:
     mongodb:
-      database:
-      uri:
+      database: azure-mongodb-url1
+      uri: ${spring-mongo-keyvault-url1}
 azure:
   keyvault:
     enabled: true
-    uri:
-    client-id:
-    client-key:
-    tenant-id:
+    uri: https://spring-azure-keyvault.vault.azure.net/
+    client-id: 853a7fef-d1b5-4793-af21-263aef3eb770
+    client-key: lvK8Q~ZScoOFNCJKfg_mDqz29MHYoVbBlfJwWcwq
+    tenant-id: bb7ed293-2674-4aef-a74a-dbf340a8ab33
     refresh-interval: 1800000
