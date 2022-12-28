@@ -1,0 +1,13 @@
+spring:
+  data:
+    mongodb:
+      database:
+      uri:
+azure:
+  keyvault:
+    enabled: true
+    uri:
+    client-id:
+    client-key:
+    tenant-id:
+    refresh-interval: 1800000
