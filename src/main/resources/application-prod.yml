@@ -1,0 +1,17 @@
+spring:
+  cloud:
+    azure:
+      keyvault:
+        secret:
+          enabled: true
+          property-sources[0]:
+            endpoint: https://spring-azure-keyvault3.vault.azure.net/
+            credential:
+              client-id: 7f753193-8cc1-4269-8c4f-3e898badebb2
+              client-secret: ewN8Q~VR75-RMqy.vJfFr9ZQlm_-asZlb1LKwbHp
+            profile:
+              tenant-id: bb7ed293-2674-4aef-a74a-dbf340a8ab33
+key-vault-secret:
+  varName: spring-azure-keyvault3-secret
+database:
+  name: ExampleDBProd
