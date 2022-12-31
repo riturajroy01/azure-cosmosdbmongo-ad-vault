@@ -1,13 +1,17 @@
 spring:
-  data:
-    mongodb:
-      database: azure-mongodb-url1
-      uri: ${spring-mongo-keyvault-url1}
-azure:
-  keyvault:
-    enabled: true
-    uri: https://spring-azure-keyvault.vault.azure.net/
-    client-id: 853a7fef-d1b5-4793-af21-263aef3eb770
-    client-key: lvK8Q~ZScoOFNCJKfg_mDqz29MHYoVbBlfJwWcwq
-    tenant-id: bb7ed293-2674-4aef-a74a-dbf340a8ab33
-    refresh-interval: 1800000
+  cloud:
+    azure:
+      keyvault:
+        secret:
+          enabled: true
+          property-sources[0]:
+            endpoint: https://spring-azure-keyvault2.vault.azure.net/
+            credential:
+              client-id: 8aab155b-24cd-45b4-a64e-9555c506fe66
+              client-secret: wYC8Q~FmFDrsx19VAogpQYuszhgP3nMcuUrI1bxy
+            profile:
+              tenant-id: bb7ed293-2674-4aef-a74a-dbf340a8ab33
+key-vault-secret:
+  varName: spring-azure-keyvault2-secret
+database:
+  name: ExampleDB
